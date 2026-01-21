@@ -63,11 +63,11 @@
 
         gaming {
             bindings = <
-&kp ESC    &kp N1  &kp N2  &kp N3     &kp N4     &gaming                          &kp N6  &kp N7  &kp N8     &kp N9   &kp N0    &kp BACKSPACE
-&kp TAB    &kp Q   &kp W   &kp E      &kp R      &kp T                            &kp Y   &kp U   &kp I      &kp O    &kp P     &kp LBKT
-&kp LSHFT  &kp A   &kp S   &kp D      &kp F      &kp G                            &kp H   &kp J   &kp K      &kp L    &kp SEMI  &kp APOS
-&kp LCTRL  &kp Z   &kp X   &kp C      &kp V      &kp B      &kp LGUI    &kp APOS  &kp N   &kp M   &kp COMMA  &kp DOT  &kp FSLH  &kp RSHFT
-                           &kp LSHFT  &kp COMMA  &kp SPACE  &kp LALT    &trans    &trans  &trans  &to 0
+&kp ESC    &kp N1  &kp N2  &kp N3     &kp N4     &gaming                              &kp N6  &kp N7  &kp N8     &kp N9   &kp N0    &kp BACKSPACE
+&kp TAB    &kp Q   &kp W   &kp E      &kp R      &kp T                                &kp Y   &kp U   &kp I      &kp O    &kp P     &kp LBKT
+&kp LSHFT  &kp A   &kp S   &kp D      &kp F      &kp G                                &kp H   &kp J   &kp K      &kp L    &kp SEMI  &kp APOS
+&kp LCTRL  &kp Z   &kp X   &kp C      &kp V      &kp B         &kp LGUI     &kp APOS  &kp N   &kp M   &kp COMMA  &kp DOT  &kp FSLH  &kp RSHFT
+                           &kp ASTRK  &kp COMMA  &kp LEFT_ALT  &kp SPACE    &trans    &trans  &trans  &to 0
             >;
         };
     };
