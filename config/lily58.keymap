@@ -69,6 +69,8 @@
 &kp LCTRL  &kp Z   &kp X   &kp C      &kp V      &kp B         &kp LGUI     &kp APOS  &kp N   &kp M   &kp COMMA  &kp DOT  &kp FSLH  &kp RSHFT
                            &kp ASTRK  &kp COMMA  &kp LEFT_ALT  &kp SPACE    &trans    &trans  &trans  &to 0
             >;
+
+            label = "Game";
         };
     };
 };
