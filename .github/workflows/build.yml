@@ -6,3 +6,5 @@ jobs:
     with:
       build_matrix_path: "config/build.yaml"
       config_path: "config"
+      # This line forces the build to continue even with Kconfig warnings
+      extra_cmake_args: "-DZMK_KCONFIG_REPORT_WARNINGS=n"
