@@ -3,8 +3,8 @@ manifest:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
     # support nice_oled and nice_epaper
-    - name: mctechnology17
-      url-base: https://github.com/mctechnology17
+    - name: xiongchris1
+      url-base: https://github.com/xiongchris1
   projects:
     - name: zmk
       remote: zmkfirmware
@@ -12,7 +12,7 @@ manifest:
       import: app/west.yml
     # support nice_oled and nice_epaper
     - name: zmk-nice-oled
-      remote: mctechnology17
+      remote: xiongchris1
       revision: v0.3/dev
   self:
     path: config
