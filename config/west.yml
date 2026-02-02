@@ -13,6 +13,6 @@ manifest:
     # support nice_oled and nice_epaper
     - name: zmk-nice-oled
       remote: xiongchris1
-      revision: v0.3/dev
+      revision: main
   self:
     path: config
