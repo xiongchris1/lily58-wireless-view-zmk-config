@@ -12,8 +12,14 @@
 #     shield: reviung41
 #
 ---
-include:
-  - board: nice_nano@2.0.0
-    shield: lily58_left  nice_view_adapter nice_epaper
-  - board: nice_nano@2.0.0
-    shield: lily58_right nice_view_adapter nice_epaper
+manifest:
+  remotes:
+    - name: zmkfirmware
+      url-base: https://github.com/zmkfirmware
+  projects:
+    - name: zmk
+      remote: zmkfirmware
+      revision: main
+      import: app/west.yml
+  self:
+    path: config
