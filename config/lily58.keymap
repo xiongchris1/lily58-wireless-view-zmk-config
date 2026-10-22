@@ -14,7 +14,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "GAMING";
             #binding-cells = <0>;
-            bindings = <&kp N5>, <&to 2>;
+            bindings = <&kp N5>, <&to 1>;
         };
     };
 
@@ -35,27 +35,7 @@
 &kp TAB         &kp Q   &kp W   &kp F   &kp P   &kp G                                                &kp J      &kp L            &kp U       &kp Y    &kp SINGLE_QUOTE  &kp LEFT_BRACKET
 &kp LEFT_SHIFT  &kp A   &kp R   &kp S   &kp T   &kp D                                                &kp H      &kp N            &kp E       &kp I    &kp O             &kp ENTER
 &none           &kp Z   &kp X   &kp C   &kp V   &kp B         &kp LEFT_CONTROL    &kp LC(BACKSPACE)  &kp K      &kp M            &kp COMMA   &kp DOT  &kp FSLH          &kp LEFT_ALT
-                                &to 2   &mo 1   &kp LEFT_ALT  &kp LEFT_COMMAND    &kp SPACE          &kp LCTRL  &kp RIGHT_SHIFT  &caps_word
-            >;
-
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
-        };
-
-        symbols {
-            // ------------------------------------------------------------------------------------------------------------
-            // | BTCLR | BT1 | BT2 |  BT3 |  BT4 |  BT5 |                   |      |       |       |      |       |       |
-            // |  F1   |  F2 |  F3 |  F4  |  F5  |  F6  |                   |  F7  |  F8   |  F9   |  F10 |  F11  |  F12  |
-            // |   `   |  !  |  @  |  #   |  $   |  %   |                   |  ^   |  &    |  *    |  (   |   )   |   ~   |
-            // |       |     |     |      |      |      |        |  |       |      |  _    |  +    |  {   |   }   |  "|"  |
-            //                     |      |      |      |        |  |       |      |       |       |
-
-            display-name = "Lower";
-            bindings = <
-&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_CLR_ALL                    &trans        &trans                &kp RIGHT_BRACKET      &trans         &trans     &trans
-&kp INSERT  &kp F1        &kp F2        &kp F3        &kp F4        &kp F5                            &kp RBRC      &kp MINUS             &kp PLUS               &kp UNDER      &kp TILDE  &kp LEFT_BRACE
-&kp DELETE  &none         &none         &kp SLASH     &kp PERIOD    &none                             &kp QUESTION  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp EQUAL      &kp SEMI   &kp DOUBLE_QUOTES
-&trans      &trans        &trans        &trans        &trans        &trans          &trans    &trans  &kp GRAVE     &kp COLON             &kp PIPE               &kp BACKSLASH  &kp SLASH  &kp PIPE
-                                        &trans        &trans        &trans          &trans    &trans  &trans        &trans                &trans
+                                &to 1   &mo 2   &kp LEFT_ALT  &kp LEFT_COMMAND    &kp SPACE          &kp LCTRL  &kp RIGHT_SHIFT  &caps_word
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -71,6 +51,26 @@
             >;
 
             label = "Game";
+        };
+
+        symbols {
+            // ------------------------------------------------------------------------------------------------------------
+            // | BTCLR | BT1 | BT2 |  BT3 |  BT4 |  BT5 |                   |      |       |       |      |       |       |
+            // |  F1   |  F2 |  F3 |  F4  |  F5  |  F6  |                   |  F7  |  F8   |  F9   |  F10 |  F11  |  F12  |
+            // |   `   |  !  |  @  |  #   |  $   |  %   |                   |  ^   |  &    |  *    |  (   |   )   |   ~   |
+            // |       |     |     |      |      |      |        |  |       |      |  _    |  +    |  {   |   }   |  "|"  |
+            //                     |      |      |      |        |  |       |      |       |       |
+
+            display-name = "Lower";
+            bindings = <
+&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_CLR_ALL                    &trans        &trans                &kp RIGHT_BRACKET      &trans         &trans     &trans
+&kp INSERT  &kp F1        &kp F2        &kp F3        &kp F4        &kp F5                            &kp RBRC      &kp MINUS             &kp PLUS               &kp UNDER      &kp TILDE  &kp LEFT_BRACE
+&kp DELETE  &kp F6        &kp F7        &kp F8        &kp F9        &none                             &kp QUESTION  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp EQUAL      &kp SEMI   &kp DOUBLE_QUOTES
+&trans      &trans        &trans        &trans        &trans        &trans          &trans    &trans  &kp GRAVE     &kp COLON             &kp PIPE               &kp BACKSLASH  &kp SLASH  &kp PIPE
+                                        &trans        &trans        &trans          &trans    &trans  &trans        &trans                &trans
+            >;
+
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
 
         layer_3 {
